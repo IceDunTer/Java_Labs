@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" onMouseClicked="#handleMouseClick" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.boev.lab2_new.GameController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Скорость:" />
+      <Label layoutX="757.0" layoutY="14.0" text="Счет:" />
+      <Label fx:id="scoreLabel" layoutX="752.0" layoutY="31.0" text="999">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="speedLabel" layoutX="15.0" layoutY="32.0" text="100%">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Circle fx:id="ball" centerX="400.0" centerY="300.0" fill="#ff1f1f" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Circle>
+   </children>
+</Pane>
